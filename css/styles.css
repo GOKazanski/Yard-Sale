@@ -1,0 +1,142 @@
+/*
+    1. Posicionamiento.
+    2. Modelo de caja.
+    3. Tipografía.
+    4. Visualización.
+    5. Otros.
+*/
+
+:root {
+    /*colors*/
+    --White: #FFFFFF;
+    --Text-input-field: #F7F7F7;
+    --Very-light-pink: #C7C7C7;
+    --Hospital-green:#ACD9B2;
+    --Dark: #232830;
+    --Black: #000000;
+}
+    
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 411px;
+    min-width: 320px;
+    max-width: 500px;
+    max-height: 823px;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-login-container .bacground-img-close {
+    width: 15px;
+    height: 15px;
+    margin-left: 90%;
+    margin-top: 25px;
+    background-image: url('/assets/icons/icon_close.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-login-container .bacground-img-logo {
+    width: 250px;
+    height: 50px;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    background-image: url('/assets/logos/logo_yard_sale.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mail-zone p{
+    padding-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-size:1.4rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    color: var(--Black)
+}
+
+.mail-zone a{
+    position: relative;
+    display: block;
+    top: 5px;    
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 50px;
+    padding-left: 10px;
+    padding-top: 20px;
+    background: var(--Text-input-field) ;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--Very-light-pink);
+}
+
+.login-zone .log-in-button{
+    position: relative;
+    display: block;
+    top: 25px;    
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 60px;
+    padding-top: 20px;
+    background: var(--Hospital-green) ;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--White);    
+}
+
+.login-zone p{
+    padding-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size:1.4rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    color: var(--Hospital-green);
+}
+
+.login-zone .sign-up-button{
+    position: relative;
+    display: block;
+    top: 130px;    
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 60px;
+    padding-top: 20px;
+    background: transparent;
+    border: solid;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color:var(--Hospital-green);    
+}
