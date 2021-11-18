@@ -284,24 +284,34 @@ color: var(--Very-light-pink);
 
 }
 
+
 .items-menu{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 30px 30px;
     position: relative;
     margin-top: 80px;
-    padding-top: 10px;
-    display: grid;
-    grid-template-rows: 1fr;
+    padding: 15px;
+    margin-bottom: 20px;
+    height: 50px;
+    text-align: center;
+    color: var(--Very-light-pink);
+    font-weight: bold;
+    font-size: 1.8rem;
 }
 
-
+.items-menu div:hover{
+    border: 2px solid var(--Hospital-green);
+    font-weight: bold;    
+    color: var(--Hospital-green);
+}
 
 .order-button {
     width: 100%;
     height: 30px;
-    margin-top:  120px;
     font-size: 1.6rem;
     display: block;
     text-align: center;
-
 }
 
 .order-button b{
@@ -324,4 +334,12 @@ color: var(--Very-light-pink);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.articles-container{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    height:  250px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
